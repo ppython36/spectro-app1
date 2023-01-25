@@ -7,7 +7,7 @@ const Main = () => {
   return (
     <StateItem>
     <View style={styles.container}>
-      <Text style={styles.initialText}>Spectro Proyect!</Text>
+      <Text style={styles.initialText}>Spectro Proyect JCPRESIGA!</Text>
     </View>
     </StateItem>
   );
@@ -20,6 +20,7 @@ const styles = StyleSheet.create({
       backgroundColor: '#fff',
       alignItems: 'center',
       justifyContent: 'center',
+      fontSize: 20
     },
     initialText:{
       fontSize:20,
