@@ -7,7 +7,7 @@ const Main = () => {
   return (
     <StateItem>
     <View style={styles.container}>
-      <Text style={styles.initialText}>Spectro Proyect!</Text>
+      <Text style={styles.initialText}>* Spectro Proyect!</Text>
     </View>
     </StateItem>
   );
