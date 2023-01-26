@@ -2,8 +2,8 @@ import React from "react";
 import Constants from "expo-constants";
 import { Text, View, StyleSheet, TextInput, TouchableOpacity } from "react-native";
 import StateItem from './contexts/contexItem/stateItem';
-import { InputText } from "./components/InputLogin/InputText";
-import { StyledInput } from "./components/InputStyled";
+
+
 
 
 
@@ -14,7 +14,13 @@ const Main = () => {
       <Text style={styles.logo}>Spectro Proyect!</Text>
       <View style={styles.container}>
         <View style={styles.inputView} >
-          <StyledInput inputText/>
+        <TextInput  
+            secureTextEntry
+            style={styles.inputText}
+            placeholder="UserName" 
+            placeholderTextColor="white"
+            //onChangeText={text => this.setState({password:text})}
+            />
         </View>
         <View style={styles.inputView} >
           <TextInput  
@@ -54,6 +60,10 @@ const styles = StyleSheet.create({
       fontSize:20,
       color : 'red',
     },
+    inputText:{
+      height:50,
+      color:"white"
+    },
     logo:{
       fontWeight:"bold",
       fontSize:50,
@@ -69,10 +79,6 @@ const styles = StyleSheet.create({
       marginBottom:20,
       justifyContent:"center",
       padding:20
-    },
-    inputText:{
-      height:50,
-      color:"white"
     },
     forgot:{
       color:"white",
