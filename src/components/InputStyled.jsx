@@ -16,7 +16,7 @@ export const StyledInput = ({ children, inputText, style,...restOfProps }) => {
     style,
 
 ];
-  return <InputText style={inputStyles}/> //<View style={inputStyles}>
-    //{children}
-  //</View>;
+  return  <View style={inputStyles}>
+    {children}
+  </View>;
 };
